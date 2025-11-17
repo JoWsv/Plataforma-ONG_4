@@ -25,15 +25,12 @@ O projeto disponibiliza informações institucionais, divulgação de projetos a
 
 ## Como Executar Localmente
 
-1. Clone o repositório: git clone https://github.com/seuusuario/ong-aguasvivas.git
-2. Acesse a pasta do projeto: cd ong-aguasvivas
+1. Clone o repositório: git clone (https://github.com/JoWsv/Plataforma-ONG_4)
+2. Acesse a pasta do projeto: HTML
 3. Abra o arquivo `index.html` no navegador.
 4. Para navegação SPA funcionar corretamente, use um servidor local: npx http-server .
 ou execute via extensão Live Server do VSCode.
 
-## Deploy
-
-O site pode ser publicado facilmente via GitHub Pages: vá em “Settings” > “Pages” e aponte para o branch principal. [Insira o link de produção aqui, se houver.]
 
 ## Funcionalidades em JavaScript
 - SPA (Single Page Application) usando módulos ES6, roteamento interno e carregamento dinâmico de views/templates.

@@ -1,0 +1,40 @@
+Plataforma-ONG/
+│
+├── HTML
+│   ├── imagens/
+│   │   ├── Logoaguaviva.jpg
+│   │   ├── OceanoELitoral.jpg
+│   │   ├── CoralEPeixes.jpg
+│   │   ├── CoralEPeixe.jpg
+│   │   ├── Limpeza.jpg
+│   │   ├── donate.jpg
+│   │   ├── CoralVivo.jpg
+│   │   └── PraiaLixo.jpg
+│   ├── index.html
+│   ├── projetos.html
+│   ├── cadastro.html
+│   └── doeagora.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── app.js
+│   ├── router.js
+│   ├── views.js
+│   ├── validators.js
+│   ├── storage.js
+│   ├── acessibilidade.js
+│   └── templates.js
+│
+├── imagens/
+│     ├── Logoaguaviva.jpg
+│     ├── OceanoELitoral.jpg
+│     ├── CoralEPeixes.jpg
+│     ├── CoralEPeixe.jpg
+│     ├── Limpeza.jpg
+│     ├── donate.jpg
+│     ├── CoralVivo.jpg
+│     └── PraiaLixo.jpg
+│
+└── README.md

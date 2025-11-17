@@ -1,0 +1,259 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS E DESIGN SYSTEM
+   ================================ */
+:root {
+  --color-primary: #4683c0;
+  --color-secondary: #4587c9;
+  --color-light: #F8F9FA;
+  --color-dark: #131618;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.9rem;
+  --font-size-md: 1.1rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2rem;
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+}
+
+/* ================================
+   BASE
+   ================================ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  /* Tema claro (padrão) */
+  background-color: #e8f3ff;
+  color: #111;
+}
+
+main {
+  flex: 1;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: var(--space-24);
+  margin-top: var(--space-32);
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ================================
+   CABEÇALHO E MENU
+   ================================ */
+header {
+  width: 100%;
+  padding: var(--space-16);
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  background-color: var(--color-primary);
+  padding: var(--space-16) 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-32);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-light);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #FFC107;
+}
+
+/* ================================
+   TIPOGRAFIA
+   ================================ */
+h2 {
+  font-size: var(--font-size-xl);
+  color: var(--color-dark);
+}
+
+p {
+  font-size: var(--font-size-md);
+  line-height: 1.8;
+  color: var(--color-dark);
+}
+
+/* ================================
+   IMAGENS
+   ================================ */
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: var(--space-16);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================================
+   RODAPÉ
+   ================================ */
+footer {
+  width: 100%;
+  padding: var(--space-16);
+  text-align: center;
+  background: linear-gradient(90deg, #4683c0, #53a9be);
+  color: var(--color-light);
+  margin-top: auto;
+}
+
+/* ================================
+   BOTÕES
+   ================================ */
+.botao {
+  display: inline-block;
+  margin: 10px auto;
+  background-color: #1b5f5b; /* Ajustado p/ contraste AA */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #144a47;
+}
+
+/* ================================
+   ACESSIBILIDADE — WCAG 2.1 AA
+   ================================ */
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Foco visível */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 3px solid #ffbf00;
+  outline-offset: 3px;
+}
+
+/* Controles de tema */
+.tema-controles {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-16);
+  margin-top: var(--space-24);
+}
+
+/* ================================
+   TEMAS
+   ================================ */
+
+/* -------- MODO ESCURO -------- */
+body.tema-escuro {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.tema-escuro main {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+}
+
+body.tema-escuro nav,
+body.tema-escuro header,
+body.tema-escuro footer {
+  background-color: #1b4965;
+}
+
+body.tema-escuro nav a {
+  color: #aad4ff;
+}
+
+body.tema-escuro nav a:hover {
+  color: #FFC107;
+}
+
+/* -------- ALTO CONTRASTE -------- */
+body.tema-alto-contraste {
+  background-color: #000;
+  color: #fff;
+}
+
+body.tema-alto-contraste main,
+body.tema-alto-contraste header,
+body.tema-alto-contraste footer {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+body.tema-alto-contraste a {
+  color: #ffff00 !important;
+  font-weight: bold;
+}
+
+body.tema-alto-contraste a:hover {
+  color: #00ffff !important;
+}
+
+body.tema-alto-contraste .botao {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* ================================
+   RESPONSIVIDADE
+   ================================ */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+  
+  .botao {
+    width: 100%;
+  }
+}
